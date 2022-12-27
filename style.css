@@ -1,0 +1,105 @@
+html{
+ 
+}
+body{
+    background-color: #234;
+    color: white;
+    margin: 0;
+ 
+}
+.timeline {
+    font-family: sans;
+    padding: 5%;
+ 
+   
+
+}
+.timeline li{
+    opacity: 0.75;
+    transition: 0.5s;
+    cursor:pointer
+}
+.timeline li:hover{
+    opacity: 1;
+   
+}
+.timeline h1{
+    text-align: center;
+}
+
+.timeline h1, .timeline h2, .timeline h3, .timeline p{
+    margin : 0:
+}
+
+.timeline h2{
+    color: orange;
+}
+
+.timeline ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 5px solid orangered;
+    margin-left: 50%;
+    
+}
+.timeline li:nth-child(odd){
+/*visibility: hidden;*/
+text-align: right;
+transform: translateX(-105%);
+
+
+}
+.timeline li:nth-child(even) {
+    /* border: 1px solid white;*/
+     padding: 7%;}
+
+
+.timeline li:nth-child(even)::before{
+    content:"◉";
+    color: orange;
+    font-size: 200%;
+    transform: translateX(-115%) translateY(80%);
+    display: inline-block;
+    background-color: #234 ;
+}
+
+.timeline li:nth-child(even)h3,
+.timeline li:nth-child(even)p{
+ 
+    padding-left: 7%;
+}
+.timeline li:nth-child(odd)h3,
+.timeline li:nth-child(odd)p{
+    padding-right: 7%; 
+}
+.timeline li:nth-child(odd)::after{
+    content:"◉";
+    color: orange;
+    font-size: 200%;
+    transform: translateX(140%) translateY(2%);
+    display: inline-block;
+    background-color: #234}
+
+    .timeline li:nth-child(odd){
+        padding-right: 7%;
+
+    }
+    
+    .calendar{
+   
+    font-size: 120%;
+    padding: 2px;
+    opacity:0 ;
+    transition:0,1s;
+   }
+
+    .calendar:hover {
+        opacity:1.0;
+        color: orangered;
+    }
+    
+
+    
+
+   
